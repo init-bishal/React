@@ -1,0 +1,15 @@
+.red{
+    color:red  ;
+}
+button{
+    margin: 8px ; 
+}
+.yellow{
+    color:yellow ;
+}
+.blue{
+    color:blue ;
+}
+.green{
+    color:greenyellow ;
+}
