@@ -1,0 +1,51 @@
+
+class BOX extends React.Component{
+    state={color: "black"} ;
+    changecolor(color){
+       this.setState({color:color })
+       console.log(color);
+    }
+    render(){
+     return (
+     <div className='box'>
+        <h1 className = {this.state.color}> { this.props.heading } </h1>
+      <p>This is a test paragraph which is created by React. This paragraph has no attribute and is contained inside a div which is also created by React.</p>
+      <button onClick={()=>this.changecolor("red")}>Red</button>
+      <button onClick={()=>this.changecolor("yellow")}>Yellow</button>
+      <button onClick={()=>this.changecolor("blue")}>Blue</button>
+      <button onClick={()=>this.changecolor("green")}>Green</button>
+    </div>
+    );
+  }
+}; 
+const APP1=()=>{
+  return (
+    <div className='row'>
+        <div className='col'>
+            <BOX heading='First Heading' />
+        </div>
+        <div className='col'>
+            <BOX heading='Second Heading' />
+        </div>
+        <div className='col'>
+            <BOX heading='Third Heading' />
+        </div>
+        <div className='col'>
+            <BOX heading='Fourth Heading' />
+        </div>
+        <div className='col'>
+            <BOX heading='Fifth Heading' />
+        </div>
+        <div className='col'>
+            <BOX heading='Sixth Heading' />
+        </div>
+    </div>
+  );
+  }
+
+ReactDOM.render(
+  <APP1/>, 
+  
+   document.getElementById('react-container1') 
+)
+  
