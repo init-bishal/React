@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/first.css">
+
+</head>
+<body>
+    <!--creating html element using react-->
+    <div style="width:500px  ; height: 50px; border-radius:3px ;
+    background-color:rgb(6, 6, 58)  ; color:white ; 
+    font-size: 32px; margin:5px ;  padding: 5px;">
+     Color changing text using React
+    </div>
+    <div id="react-container1" style="background-color: white; border-radius: 10px;"></div>
+    
+    <div id="react-container2" style="background-color: white; border-radius: 10px;"></div>
+
+
+
+
+
+
+
+
+
+   <script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script><!--babel compiler-->
+    <script  type="text/babel" src="app.js"></script>
+</body>
+</html>
